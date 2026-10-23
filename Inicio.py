@@ -5,7 +5,9 @@ import pandas as pd
 import re
 from nltk.stem import SnowballStemmer
 
-st.title("Demo de TF-IDF con Preguntas y Respuestas")
+
+from aurora import app_header, footer
+app_header()
 
 st.write("""
 Cada línea se trata como un **documento** (puede ser una frase, un párrafo o un texto más largo).  
@@ -36,7 +38,7 @@ def tokenize_and_stem(text: str):
     stems = [stemmer.stem(t) for t in tokens]
     return stems
 
-if st.button("Calcular TF-IDF y buscar respuesta"):
+if st.button("Calcular TF-IDF y buscar respuesta", type="primary"):
     documents = [d.strip() for d in text_input.split("\n") if d.strip()]
     if len(documents) < 1:
         st.warning("⚠️ Ingresa al menos un documento.")
@@ -95,3 +97,6 @@ if st.button("Calcular TF-IDF y buscar respuesta"):
 
 
 
+
+
+footer("TEXTO / IMAGEN / VOZ / INTERACCIÓN")

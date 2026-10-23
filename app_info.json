@@ -1,0 +1,18 @@
+{
+  "slug": "TF_IDF",
+  "entry": "Inicio.py",
+  "title": "Búsqueda con TF-IDF",
+  "category": "Texto",
+  "headline": "Una pregunta.",
+  "accent": "El texto más cercano.",
+  "description": "Compara una pregunta con documentos mediante pesos de palabras y similitud.",
+  "input": "Documentos en inglés, uno por línea, y una pregunta en inglés.",
+  "output": "Matriz TF-IDF, similitudes y documento mejor puntuado.",
+  "steps": "Escribe los documentos y la pregunta. Pulsa Calcular TF-IDF y buscar respuesta; revisa la matriz y los puntajes.",
+  "technology": "scikit-learn · NLTK · Similitud coseno",
+  "limits": "Recupera el documento más similar: no genera una respuesta nueva. El procesamiento está configurado para inglés.",
+  "image": "Chat_pdf.png",
+  "url": "https://bvysd3fe5zgcavkxwm4zsu.streamlit.app/",
+  "repo": "https://github.com/Jhuza/TF_IDF",
+  "kind": "document"
+}
